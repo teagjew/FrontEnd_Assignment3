@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+    <style> 
+        body {
+            background-image: linear-gradient(to bottom, white, rgba(61, 130, 233, 0.699));
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:rgb(0, 0, 0);
+        }
+        a:hover {
+            background-color: rgba(255, 255, 255, 0.349);
+        }
+        .grid-container {
+            display: grid;
+            justify-content: center;  
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto auto auto auto;
+            grid-gap: 1em;
+            padding: 10px;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .title {
+            grid-row: 1 / 2;
+            grid-column: 1 / 5;
+        }
+        .pic1 {
+            grid-row: 2 / 3;
+            grid-column: 1 / 5;
+        }
+        .playerList {
+            grid-row: 3 / 4;
+            grid-column: 1 / 3;
+        }
+        .playerDetails {
+            grid-row: 3 / 4;
+            grid-column: 3 / 5;
+        }
+        .description {
+            grid-row: 4 / 5;
+            grid-column: 1 / 3;
+        }
+        .contact {
+            grid-row: 4 / 5;
+            grid-column: 3 / 5;
+        }
+    </style>
+</head>
+<body>
+    <h1  style="text-align: center; text-shadow: .2em .2em .3em rgb(136, 135, 135);">CIDM 3372 Blog</h1>
+    <hr>
+    <section style="text-align: center;">
+        <a href="Index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="Posts.html">List of Posts</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="Create.html">Create a New Post</a>
+    </section>
+    <hr>
+
+    <div class="grid-container">
+    <div class="title">
+    <header style="text-align: center;">
+        <h2 style="font-size: 40px; text-decoration: underline;">Best Fantasy Football Draft Picks</h2>
+        <h4 style="font-style: italic">Posted by John Doe</h6>
+        <h4>Date: 9/7/22</h6>
+    </header>
+    </div>
+
+    <div class="pic1" style="text-align:center;">
+    <figure>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRLbXLnUggEQ6jjeQMIEX1SZvlfwrnEPzW7Q&usqp=CAU" alt="Football Players" style="border-radius: 20px; border-style: double; box-shadow: 6px 6px 5px gray;">
+        <figcaption style="font-size: 10px;"><em>Jonathan Taylor, Patrick Mahomes and Cooper Kupp</em></figcaption>
+    </figure>
+    </div>
+
+            <div class="playerList">
+            <section>
+                <p>The top players you definitely need on your Fantasy Football team this year are:</p>
+                <ul style="list-style-type: circle;">
+                    <li>Jonathan Taylor</li>
+                    <li>Russell Wilson</li>
+                    <li>Jamarr Chase</li> 
+                    <li>Nick Chubb</li>
+                    <li>Justin Jefferson</li>
+                </ul>
+            </section>
+            </div>
+
+            <div class="playerDetails">
+            <section>
+                <img src="https://athlonsports.com/.image/t_share/MTg1MjIwODExNDU4NjE4NzEz/jonathantaylor_2021.jpg" alt="Jonathan Taylor" style="float: right; width: 300px; border-radius: 20px; border-style: double; box-shadow: 6px 6px 5px gray;">
+                <p>Taylor returns as the feature back in Indianapolis after leading the position in fantasy points, carries, yards and TDs during a breakout 2021 season. Taylor's season started and ended slowly (zero top-10 fantasy outings during Weeks 1-3 and 16-18),
+                    but it was as good as it gets in the middle (11 straight top-10s during Weeks 4-15). Taylor found the end zone 20 times and his 26 carries inside the opponent's 5-yard line were the most the league had seen in a single season since 2012.
+                    An uptick in passing-game work would be nice (unlikely with Nyheim Hines in the mix), but Taylor's age (23), massive usage in a run-heavy offense and top-end efficiency are plenty enough to allow continued elite production. He should be the first pick in 2022 fantasy drafts.
+                </p>
+            </section>
+            </div>
+
+            <div class="definition">
+            <section>
+                <aside>
+                    <h4 style="text-decoration: underline">Fantasy Football</h4>
+                    <blockquote cite="https://en.wikipedia.org/wiki/Fantasy_football_(gridiron)">
+                        Fantasy football is a game in which the participants serve as owners and general managers of virtual professional American football teams. The competitors select their rosters by participating in a draft in which all relevant National Football League players are available.
+                    </blockquote>
+                </aside>
+            </section>
+            </div>
+
+    <div class="contact">
+    <footer>
+        <details>
+            <summary>Author Contact Information</summary>
+            <p>Author: John Doe<br>
+            <a href="mailto:johndoe@email.com">johndoe@email.com</a></p>
+        </details>
+    </footer>
+    </div>
+    </div>
+</body>
+</html>
