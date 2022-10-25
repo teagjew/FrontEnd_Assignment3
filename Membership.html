@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <style> 
+        body {
+            background-image: radial-gradient(circle, rgba(148, 131, 196, 0.699), white);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:rgb(146, 93, 32);
+        }
+        a:hover {
+            background-color: rgba(255, 255, 255, 0.349);
+        }
+        .membershipForm {
+            display: flex;
+            justify-content: center;
+        }
+        form {
+            background-color: rgb(255, 255, 255, .35);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; text-shadow: .2em .2em .3em rgb(136, 135, 135);">CIDM 3372 Blog</h1>
+    <hr>
+    <section style="text-align: center;">
+        <a href="Index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="Posts.html">List of Posts</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="Create.html">Create a New Post</a>
+    </section>
+    <hr>
+
+    <div class="membershipForm">
+    <form>
+        <h3>Become a Member</h3>
+        <fieldset>
+            <label for="firstName">First Name: </label>
+            <input type="text" id="firstName" name="firstName"><br><br>
+
+            <label for="lastName">Last Name: </label>
+            <input type="text" id="lastName" name="lastName"><br><br>
+
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="email"><br><br>
+
+            <label for="username">Username: </label>
+            <input type="text" id="userName" name="userName"><br><br>
+
+            <label for="password">Password: </label>
+            <input type="text" id="password" name="password"><br><br>
+
+            <label for="password"> Repeat Password: </label>
+            <input type="text"><br><br>
+
+            <label for="bio">Bio: </label><br>
+            <textarea id="bio" name="bio"></textarea><br><br>
+
+            <button type="button" onclick="alert('New Account Created')">Create Account</button>
+        </fieldset>
+    </form>
+    </div>
+</body>
+</html>
