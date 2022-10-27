@@ -13,6 +13,7 @@
         }
         a:hover {
             background-color: rgba(255, 255, 255, 0.349);
+            transition: 0.5s;
         }
         ul {
             background-color: white;
@@ -21,26 +22,60 @@
             padding: 10px;
             margin: auto;
         }
+        .sidebar {
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: white;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+        .sidebar a {
+            display: block;
+            color: rgb(146, 93, 32);
+            padding: 16px;
+        }
+        .sidebar a:hover:not(.active) {
+            background-color:  rgb(146, 93, 32);
+            color: white;
+        }
+        @media screen and (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .sidebar a {float: left;}
+            .content {margin-left: 0;}
+        }
+        @media screen and (max-width: 576px) {
+            .sidebar a {
+                text-align: center;
+                float: none;
+            }
+        }
+        @media screen and (min-width: 768px)
+        {
+            .content {
+                margin-left: 220px;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1 style="text-align: center; text-shadow: .2em .2em .3em rgb(136, 135, 135);">CIDM 3372 Blog</h1>
-    <hr>
-    <section style="text-align: center;">
-        <a href="Index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="Posts.html">List of Posts</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <section class="sidebar">
+        <a href="Index.html">Home</a>
+        <a href="Posts.html">List of Posts</a>
         <a href="Create.html">Create a New Post</a>
-    </section>
-    <hr>
-
-    <hr>
-    <section style="text-align: center;">
-        <a href="Donation.html">Make a Donation</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="Membership.html">Become a Member</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="Donation.html">Make a Donation</a>
+        <a href="Membership.html">Become a Member</a>
         <a href="Newsletter.html">Subscribe to Newsletter</a>
     </section>
-    <hr>
 
+    <section class="content">
+    <h1 style="text-align: center; text-shadow: .2em .2em .3em rgb(136, 135, 135);">CIDM 3372 Blog</h1>
+    <hr>
     <figure style="text-align: center;">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3udDQEmZLagc7HCQ99zwZeyTyJh4viuzR7A&usqp=CAU" alt="Welcome" style="border-radius: 20px; border-style: groove; box-shadow: 6px 6px 5px gray">
         <figcaption style="font-size: 8px">Image Source: https://www.thesorrygirls.com/blog-landing-page</figcaption>
@@ -78,5 +113,6 @@
             <p>If you choose to use our Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that we collect is used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.</p>
         </details>
     </footer>
+    </section>
 </body>
 </html>

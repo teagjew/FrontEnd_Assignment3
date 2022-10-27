@@ -10,9 +10,11 @@
             background-image: radial-gradient(circle, rgba(148, 131, 196, 0.699), white);
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             color:rgb(146, 93, 32);
+            animation: backColor 15s infinite;
         }
         a:hover {
             background-color: rgba(255, 255, 255, 0.349);
+            transition: 0.5s;
         }
         .membershipForm {
             display: flex;
@@ -21,6 +23,14 @@
         form {
             background-color: rgb(255, 255, 255, .35);
         }
+
+        @keyframes backColor {
+            0%   {background-image: radial-gradient(circle, rgba(148, 131, 196, 0.699), white);}
+            25%  {background-image: radial-gradient(circle, white, rgba(148, 131, 196, 0.699));}
+            50%  {background-image: radial-gradient(circle, rgba(148, 131, 196, 0.699), white);}
+            75%  {background-image: radial-gradient(circle, white, rgba(148, 131, 196, 0.699));}
+            100% {background-image: radial-gradient(circle, rgba(148, 131, 196, 0.699), white);}
+    }
     </style>
 </head>
 <body>

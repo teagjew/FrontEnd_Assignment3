@@ -13,15 +13,20 @@
         }
         a:hover {
             background-color: rgba(255, 255, 255, 0.349);
+            transition: 0.5s;
         }
-        .grid-container {
-            display: grid;
-            grid-template-areas: 'NewPost NewPost NewPost Calculation Calculation Calculation';
+        .flex-container {
+            display: flex;
+            justify-content: center;
             grid-gap: 1em;
-            padding-left: 8%;
         }
         form {
             background-color: rgb(255, 255, 255, .35);
+        }
+        @media screen and (max-width: 768px) {
+            .flex-container {
+            flex-wrap: wrap;
+        }
         }
     </style>
 </head>
@@ -35,7 +40,7 @@
     </section>
     <hr>
 
-    <div class="grid-container">
+    <div class="flex-container">
     <div class="NewPost">
     <h3>Create a New Post</h3>
     <form>

@@ -11,8 +11,12 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             color:rgb(0, 0, 0);
         }
+        .floatpic {
+            float: right;
+        }
         a:hover {
             background-color: rgba(255, 255, 255, 0.349);
+            transition: 0.5s;
         }
         .grid-container {
             display: grid;
@@ -40,13 +44,70 @@
             grid-row: 3 / 4;
             grid-column: 3 / 5;
         }
-        .description {
+        .picCollage {
             grid-row: 4 / 5;
+            grid-column: 1 / 5;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .description {
+            grid-row: 5 / 6;
             grid-column: 1 / 3;
         }
         .contact {
-            grid-row: 4 / 5;
+            grid-row: 5 / 6;
             grid-column: 3 / 5;
+        }
+        .img1:hover, .img1:focus, .img2:hover, .img2:focus, .img3:hover, .img3:focus, .img4:hover, .img4:focus {
+            transform: scale(1.25);
+        }
+        @media screen and (max-width: 768px) {
+            .grid-container {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: auto;
+            }
+            .title {
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+            }
+            .pic1 {
+                grid-row: 2 / 3;
+                grid-column: 1 / 2;
+            }
+            .playerList {
+                grid-row: 3 / 4;
+                grid-column: 1 / 2;
+            }
+            .playerDetails {
+                grid-row: 4 / 5;
+                grid-column: 1 / 2;
+            }
+            .picCollage {
+                grid-row: 5 / 6;
+                grid-column: 1 / 2;
+            }
+            .description {
+                grid-row: 6 / 7;
+                grid-column: 1 / 2;
+            }
+            .contact {
+                grid-row: 7 / 8;
+                grid-column: 1 / 2;
+            }
+        }
+        @media screen and (max-width: 576px) {
+            .floatpic {
+                float: none;  
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        @media screen and (max-width: 576px) {
+            .picCollage {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -91,12 +152,21 @@
 
             <div class="playerDetails">
             <section>
-                <img src="https://athlonsports.com/.image/t_share/MTg1MjIwODExNDU4NjE4NzEz/jonathantaylor_2021.jpg" alt="Jonathan Taylor" style="float: right; width: 300px; border-radius: 20px; border-style: double; box-shadow: 6px 6px 5px gray;">
+                <img src="https://athlonsports.com/.image/t_share/MTg1MjIwODExNDU4NjE4NzEz/jonathantaylor_2021.jpg" alt="Jonathan Taylor" class="floatpic" style="width: 300px; border-radius: 20px; border-style: double; box-shadow: 6px 6px 5px gray;">
                 <p>Taylor returns as the feature back in Indianapolis after leading the position in fantasy points, carries, yards and TDs during a breakout 2021 season. Taylor's season started and ended slowly (zero top-10 fantasy outings during Weeks 1-3 and 16-18),
                     but it was as good as it gets in the middle (11 straight top-10s during Weeks 4-15). Taylor found the end zone 20 times and his 26 carries inside the opponent's 5-yard line were the most the league had seen in a single season since 2012.
                     An uptick in passing-game work would be nice (unlikely with Nyheim Hines in the mix), but Taylor's age (23), massive usage in a run-heavy offense and top-end efficiency are plenty enough to allow continued elite production. He should be the first pick in 2022 fantasy drafts.
                 </p>
             </section>
+            </div>
+
+            <div class="picCollage">
+                <section>
+                    <img src="https://cdn.vox-cdn.com/thumbor/gHvaq4EZepCD0lw2HPL2AOCB5AU=/0x0:3000x2000/1200x800/filters:focal(1204x147:1684x627)/cdn.vox-cdn.com/uploads/chorus_image/image/71101019/1370407740.0.jpg" style="width: 300px; border-radius: 20px;" class="img1">
+                    <img src="https://sportshub.cbsistatic.com/i/r/2022/10/18/3326e3a8-8f04-4496-8f7c-6a7cd3fa52c4/thumbnail/1200x675/4643dcae201cf7aded5795b9ff53c964/russell-wilson.jpg" style="width: 300px; border-radius: 20px;" class="img2">
+                    <img src="https://www.skornorth.com/wp-content/uploads/2022/09/AP22254779732774-scaled.jpg" style="width: 300px; border-radius: 20px;" class="img3">
+                    <img src="https://s7d2.scene7.com/is/image/TWCNews/cleveland-browns-chubb-ap-061521-oh" style="width: 300px; border-radius: 20px;" class="img4">
+                </section>
             </div>
 
             <div class="definition">

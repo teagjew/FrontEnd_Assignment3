@@ -13,11 +13,18 @@
         }
         a:hover {
             background-color: rgba(255, 255, 255, 0.349);
+            transition: 0.5s;
         }
         table, th, td {
             border: 1px solid;
             padding: 1em;
             background-color: rgb(255, 255, 255, .35);
+        }
+        @media screen and (max-width: 576px) {
+            .hide {
+                display: none;
+            }
+
         }
     </style>
 </head>
@@ -39,9 +46,9 @@
         <thead>
             <tr style="text-decoration: underline;">
                 <th>Name</th>
-                <th>Subject</th>
+                <th  class="hide">Subject</th>
                 <th>Author</th>
-                <th>Date Posted</th>
+                <th  class="hide">Date Posted</th>
             </tr>
         </thead>
         </div>
@@ -49,27 +56,27 @@
         <colgroup>
             <tr>
                 <td><a href="Post.html">Best Fantasy Football Draft Picks</a></td>
-                <td>Sports: Football</td>
+                <td class="hide">Sports: Football</td>
                 <td>John Doe</td>
-                <td>9/7/22</td>
+                <td class="hide">9/7/22</td>
             </tr>
             <tr>
                 <td>Best Concerts of the Summer</td>
-                <td>Music: Pop</td>
+                <td class="hide">Music: Pop</td>
                 <td>Jane Doe</td>
-                <td>7/6/22</td>
+                <td class="hide">7/6/22</td>
             </tr>
             <tr>
                 <td>Meal Prepping</td>
-                <td>Cooking: Lunch</td>
+                <td class="hide">Cooking: Lunch</td>
                 <td>Alex Smith</td>
-                <td>6/20/22</td>
+                <td class="hide">6/20/22</td>
             </tr>
             <tr>
                 <td>Most Anticipated Albums of the Year</td>
-                <td>Music: Rock</td>
+                <td class="hide">Music: Rock</td>
                 <td>Mary Lamb</td>
-                <td>4/16/22</td>
+                <td class="hide">4/16/22</td>
             </tr>
         </colgroup>
         </tbody>
